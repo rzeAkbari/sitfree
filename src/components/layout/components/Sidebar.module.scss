@@ -1,0 +1,8 @@
+@use "src/custom.scss" as *;
+
+.nav-item{
+    &:hover {
+        background-color: white;
+        color: $dark;
+    }
+}

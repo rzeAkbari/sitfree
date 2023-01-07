@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$bg-color: #efefef;
+$primary:    #FDCA61;
+$dark:      #434343;
+
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  #434343,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $bg-color,
+    "dark":       $dark,
+);
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
