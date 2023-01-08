@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Coffee",
+        "photo": "images/categories/coffee.png",
+        "description": "Sample Coffee Description!"
+    },
+    {
+        "title": "Cake",
+        "photo": "images/categories/cake.png",
+        "description": "Sample Cake Description!"
+    },
+    {
+        "title": "Salad",
+        "photo": "images/categories/salad.png",
+        "description": "Sample Salad Description!"
+    },
+    {
+        "title": "Spagetti",
+        "photo": "images/categories/spagetti.png",
+        "description": "Sample Spagetti Description!"
+    },
+    {
+        "title": "Fruit",
+        "photo": "images/categories/fruit.png",
+        "description": "Sample Fruit Description!"
+    },
+    {
+        "title": "Sushi",
+        "photo": "images/categories/sushi.png",
+        "description": "Sample Sushi Description!"
+    }
+]
