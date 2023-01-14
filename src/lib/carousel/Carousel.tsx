@@ -5,13 +5,16 @@ import {
     faChevronRight
 } from '@fortawesome/free-solid-svg-icons'
 
+const NUMBER_CARDS_IN_VIEW = 4
+const CARDS_IN_VIEW_INDEX = 3
+
 function Carousel({ children }: { children: ReactElement[] }) {
-    const activeCarousel = useRef<number>(3)
+    const activeCarousel = useRef<number>(CARDS_IN_VIEW_INDEX)
     const caroselDirection = useRef<string>('right')
     const handleLeft = () => {
         if (activeCarousel.current > 0) {
             if (caroselDirection.current === 'left') activeCarousel.current--
-            else activeCarousel.current -= 4
+            else activeCarousel.current -= NUMBER_CARDS_IN_VIEW
         }
 
         caroselDirection.current = 'left'
@@ -23,7 +26,7 @@ function Carousel({ children }: { children: ReactElement[] }) {
     const handleRight = () => {
         if (activeCarousel.current < children.length - 1) {
             if (caroselDirection.current === 'right') activeCarousel.current++
-            else activeCarousel.current += 4
+            else activeCarousel.current += NUMBER_CARDS_IN_VIEW
         }
         caroselDirection.current = 'right'
 
@@ -53,7 +56,7 @@ function Carousel({ children }: { children: ReactElement[] }) {
                         <div
                             key={child.key}
                             id={`item-${index}`}
-                            className='col-3'
+                            className={`col-${CARDS_IN_VIEW_INDEX}`}
                         >
                             {child}
                         </div>
