@@ -1,32 +1,32 @@
 [
     {
         "title": "Coffee",
-        "photo": "images/categories/coffee.png",
+        "photo": "images/categories/coffee.jpg",
         "description": "Sample Coffee Description!"
     },
     {
-        "title": "Cake",
-        "photo": "images/categories/cake.png",
-        "description": "Sample Cake Description!"
-    },
-    {
-        "title": "Salad",
-        "photo": "images/categories/salad.png",
-        "description": "Sample Salad Description!"
-    },
-    {
-        "title": "Spaghetti",
-        "photo": "images/categories/spaghetti.png",
-        "description": "Sample Spaghetti Description!"
+        "title": "Cornetto",
+        "photo": "images/categories/cornetto.webp",
+        "description": "Sample Cornetto Description!"
     },
     {
         "title": "Fruit",
-        "photo": "images/categories/fruit.png",
+        "photo": "images/categories/fruit.webp",
         "description": "Sample Fruit Description!"
     },
     {
         "title": "Sushi",
         "photo": "images/categories/sushi.png",
         "description": "Sample Sushi Description!"
+    },
+    {
+        "title": "Salad",
+        "photo": "images/categories/salad.webp",
+        "description": "Sample Salad Description!"
+    },
+    {
+        "title": "Spaghetti",
+        "photo": "images/categories/spaghetti.jpg",
+        "description": "Sample Spaghetti Description!"
     }
 ]

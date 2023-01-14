@@ -1,5 +1,6 @@
 import { ReactElement } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
+import Carousel from '../../lib/carousel/Carousel'
 import ProductCard from './components/ProductCard'
 import useCategories, { Category } from './service/hooks/useCategories'
 
@@ -9,13 +10,11 @@ function Home(): ReactElement {
     if (isLoading) return <div>loading...</div>
     return (
         <Container>
-            <Row className='no-wrap'>
-                {data.map((category: Category) => (
-                    <Col>
-                        <ProductCard category={category} />
-                    </Col>
-                ))}
-            </Row>
+            <Carousel>
+                {data.map((category: Category) => {
+                    return <ProductCard category={category} />
+                })}
+            </Carousel>
         </Container>
     )
 }
